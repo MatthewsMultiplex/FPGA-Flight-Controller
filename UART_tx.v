@@ -108,14 +108,3 @@ module UART_Tx(
     Tx_Done <= 1;
     state <= IDLE;
     end
-    
-    default: state <= IDLE;
-    
-    endcase
-    
-  end
-  
-  assign o_Tx_Signal = Tx_Signal;
-  assign o_Tx_Done = Tx_Done; 
-    
-endmodule
