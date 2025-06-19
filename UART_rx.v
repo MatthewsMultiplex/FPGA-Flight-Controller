@@ -7,7 +7,7 @@ module UART_Rx (
    output [7:0] o_Rx_Data
    );
    
-   parameter CLKS_PER_BIT = 87;
+   parameter CLKS_PER_BIT = 2;
    parameter IDLE = 0,
              RX_START_BIT = 1,
              RX_DATA = 2,
@@ -116,11 +116,3 @@ module UART_Rx (
            default:
            state <= IDLE;
       endcase
-      
-      end                     
-                          
-     assign o_Rx_Valid = r_Rx_Valid; 
-     assign o_Rx_Data = Rx_Byte;                       
-                         
-  
-endmodule
