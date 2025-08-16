@@ -1,5 +1,7 @@
 # FPGA-Flight-Controller
 
+Description: 
+This is an FPGA flight controller essentially the goal of this project was to make a flight controller that would take in data from an IMU and parse the gyroscopic data to increase the duty cycle of either motor to push the boards orientation back to straight and level flight, in the same way as if it was built into a drone. This would aid in keeping a drone steady in harsher conditions like gusty winds. 
 
 Materials needed: 
 1. Zybo 7020 SOC 
